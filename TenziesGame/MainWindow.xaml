@@ -1,0 +1,22 @@
+﻿<Window x:Class="TenziesGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TenziesGame"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Border BorderBrush="Black" BorderThickness="2" CornerRadius="5" Padding="10" Margin="20" Background="LightGray" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <!-- Text inside the box -->
+                <TextBlock Text="Tenzies Game" FontSize="24" FontWeight="Bold" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Border>
+            <UniformGrid Name="DiceContainer" Rows="2" Columns="5" Margin="10">
+                
+            </UniformGrid>
+        </StackPanel>
+        <Button Content="Roll Dice" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="50" Click="RollButtonClick"/>
+    </Grid>
+</Window>
