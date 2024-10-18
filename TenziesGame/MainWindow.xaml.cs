@@ -102,8 +102,9 @@ namespace TenziesGame
                     diceText.Text = dice.DiceNum.ToString();
 
                 });
-
             }
+
+            CheckWinning();
         }
     }
 }
